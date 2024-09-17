@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="SnackShala/snackfav.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-3299764435094370">
-    <title>Welcome to SnackShala</title>
+    <meta name="description" content="SnackShala offers authentic, delicious snacks delivered right to your door. Visit our eBay store for the best deals on snacks from around the world!">
+    <meta name="keywords" content="snacks, buy snacks online, snack delivery, authentic snacks, SnackShala">
+    <title>Buy Snacks Online | SnackShala – Authentic Snacks Delivered</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="snackfav.png">
+    
+    <!-- Font Awesome for Instagram Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="SnackShala – Buy Authentic Snacks Online">
+    <meta property="og:description" content="SnackShala offers the best snacks delivered to your door. Visit our eBay store!">
+    <meta property="og:image" content="https://www.snackshala.com/snack-image.jpg">
+    <meta property="og:url" content="https://www.snackshala.com">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4M6FMWNGK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-J4M6FMWNGK');
+    </script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -60,23 +82,47 @@
         button:hover {
             background-color: #0056b3;
         }
+
+        .social-media {
+            margin-top: 20px;
+        }
+        .instagram-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #e1306c;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .instagram-button i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .instagram-button:hover {
+            background-color: #c12757;
+        }
+        
+        /* Add styling for logo */
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J4M6FMWNGK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J4M6FMWNGK');
-</script>
 <body>
     <div class="container">
+        <!-- Logo -->
+        <img src="snackfav.png" alt="SnackShala Logo" class="logo">
+
         <h1>Welcome to SnackShala</h1>
+        <h2>Authentic Snacks Delivered to Your Door</h2>
+        <h3>Order Snacks Online Through Our eBay Store</h3>
         <p class="message">Our website is currently under construction. For purchases, please visit our <a href="https://www.ebay.com/usr/snack-shala" target="_blank">eBay store</a>.</p>
         <p class="message">Contact@snackshala.com</p>
-        <form action="mailto:shakil.ahmed1995@gmail.com" method="post" enctype="text/plain">
+        <form action="mailto:Contact@snackshala.com" method="post" enctype="text/plain">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -91,6 +137,13 @@
             </div>
             <button type="submit">Send</button>
         </form>
+
+        <!-- Instagram Button -->
+        <div class="social-media">
+            <a href="https://www.instagram.com/_snackshala" target="_blank" class="instagram-button">
+                <i class="fab fa-instagram"></i> Follow Us on Instagram
+            </a>
+        </div>
     </div>
 </body>
 </html>
